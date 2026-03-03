@@ -1,0 +1,98 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.font-display {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-scaleIn {
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+.view-transition {
+    transition: opacity 0.3s ease;
+}
+
+.btn-press:active {
+    transform: scale(0.98);
+}
+
+.category-tab.active,
+.floor-tab.active {
+    background-color: #1a1d21;
+    color: white;
+    border: none;
+}
+
+.table-btn.selected {
+    border-color: #f97316 !important; 
+    background-color: #fff7ed;
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+.nav-item.active {
+    background-color: #2a2d31;
+    border-left: 3px solid #f97316;
+}
+
+.nav-item.active svg {
+    color: white !important;
+}
+
+.payment-method.active {
+    border-color: #f97316;
+    background-color: #fff7ed;
+}
+
+.payment-method.active svg,
+.payment-method.active span {
+    color: #f97316;
+}
+
+.delete-btn {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.group:hover .delete-btn {
+    opacity: 1;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOS - Restaurant POS System</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sidebar: '#1a1d21',
+                        sidebarHover: '#2a2d31',
+                        accent: '#f97316',
+                        accentHover: '#ea580c',
+                        mainBg: '#f5f5f5',
+                        textPrimary: '#1a1d21',
+                        textSecondary: '#6b7280',
+                        border: '#e5e7eb',
+                        success: '#22c55e',
+                        spicy: '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-mainBg min-h-screen">
+    <div id="root"></div>
+
+    <!-- React & Babel Scripts -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Component Scripts (Order matters for Babel/JSX) -->
+    <script type="text/babel" src="Home.jsx"></script>
+    <script type="text/babel" src="Menu.jsx"></script>
+    <script type="text/babel" src="App.jsx"></script>
+</body>
+</html>
